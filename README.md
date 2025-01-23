@@ -19,24 +19,24 @@ The key dependencies are:
 6.react-router-dom: DOM bindings for React Router to handle routing in the application.
 7.redux: A predictable state container for JavaScript apps.
 
-##Installation
+Installation
 
 1.git clone git@github.com:Alevtina-98/popcorn-time.git
 2.cd popcorn-time
 3.npm install
 
-##Usage
+Usage
 To start the application locally, run the following command:
 
 npm run dev
 
-##Features
+Features
 
 Watch the latest movies and TV series.
 View detailed information about movies and shows.
 Watch trailers for each title.
 
-##Deployment
+Deployment
 To deploy the project on GitHub Pages, run:
 npm run deploy
 

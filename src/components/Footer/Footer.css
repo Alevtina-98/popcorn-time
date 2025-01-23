@@ -1,0 +1,25 @@
+.footer {
+  grid-area: footer;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #a60311;
+  border-top: 2px solid #f2efe9;
+}
+
+.all-rights {
+  color: #d98e04;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.footer-logo img {
+  margin-left: 60px;
+}
+
+.footer-logo p {
+  margin: 5px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #f8ffff;
+}

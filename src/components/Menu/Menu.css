@@ -1,0 +1,76 @@
+.menu {
+  grid-area: menu;
+  background-color: #73020c;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 65px;
+  border-bottom: 1px solid #f2efe9;
+  margin-bottom: 2px;
+}
+
+.movies {
+  display: inline-block;
+  position: relative;
+}
+
+.films-btn,
+.serials-btn {
+  width: 130px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid #d98e04;
+  background: #d98e04;
+  cursor: pointer;
+  color: #feffff;
+  font-size: 18px;
+}
+
+.dropdown-content {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  background: #73020c;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-width: 150px;
+  padding-top: 4px;
+  transform: translateY(-10px);
+  transition: opacity 0.4s ease, transform 0.3s ease, visibility 0.4s ease;
+}
+
+.genre-btn-serials,
+.genre-btn-movies {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #73020c;
+  border: 2px solid #d98e04;
+  width: 100%;
+  height: 45px;
+  cursor: pointer;
+}
+
+.genre-btn-serials:hover,
+.genre-btn-movies:hover {
+  background: #590202;
+}
+
+.dropdown-content a {
+  display: block;
+}
+
+.serials {
+  display: inline-block;
+}
+
+.movies:hover .dropdown-content,
+.serials:hover .dropdown-content {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}

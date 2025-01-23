@@ -1,0 +1,75 @@
+.genre-tv {
+  grid-area: main;
+  width: 100%;
+  background: #f2efe9;
+  display: flex;
+  justify-content: center;
+}
+
+.genre-movies-wrapper {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f2efe9;
+  box-sizing: border-box;
+}
+
+.genre-movies-title {
+  margin: 5px 0 5px 0;
+  text-align: center;
+  color: #000d0c;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.genre-movies-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.item-movies {
+  position: relative;
+  height: 270px;
+  width: 230px;
+  border-radius: 10px;
+  border: 4px solid rgb(115, 2, 12);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* .item-movies img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+} */
+
+.item-movies h3 {
+  visibility: hidden;
+  margin: 10px 0;
+  text-transform: capitalize;
+  background-color: #d98e04;
+  color: #a60311;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.item-movies:hover h3 {
+  display: block;
+  visibility: visible;
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 30%;
+}

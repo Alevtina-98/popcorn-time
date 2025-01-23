@@ -1,0 +1,87 @@
+.main {
+  grid-area: main;
+  width: 100%;
+  background: #a60311;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2px;
+}
+
+.anim-logo {
+  width: 70px;
+  height: 70px;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0); 
+  }
+  to {
+    transform: translateY(2352px); 
+  }
+}
+
+.trending-movies {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  background-color: #f2efe9;
+  box-sizing: border-box;
+}
+
+.trending-movies h2 {
+  margin-bottom: 22px;
+  text-align: center;
+  color: #000d0c;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.movies-card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.movies-card div {
+  position: relative;
+  height: 445px;
+  border-radius: 10px;
+  border: 4px solid rgb(115, 2, 12);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.movies-card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  object-fit: cover;
+  padding-top: 0;
+}
+
+.movies-card h3 {
+  display: none;
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-weight: 800;
+  background-color: #d98e04;
+  color: #a60311;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.movies-card div:hover h3 {
+  display: block;
+  opacity: 1;
+  width: 100%;
+  height: 15.4%;
+}

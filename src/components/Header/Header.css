@@ -1,0 +1,85 @@
+.header {
+  grid-area: header;
+  padding: 10px;
+  background-color: #a60311;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+  color: #feffff;
+  border-bottom: 2px solid #f2efe9;
+}
+
+img {
+  height: 80px;
+  width: 80px;
+  padding-top: 20px;
+}
+
+.popcorn-time {
+  margin: 8px;
+}
+.popcorn-time a {
+  color: #feffff;
+  text-decoration: none;
+  font-size: 28px;
+}
+
+input {
+  width: 440px;
+  height: 40px;
+  padding: 15px;
+  border-radius: 20px;
+  border: 1px solid #ffff;
+  background-color: rgb(89, 2, 2, 0.2);
+  font-size: 18px;
+}
+
+input::placeholder {
+  color: #f2efe9;
+  font-style: italic;
+  font-size: 20px;
+}
+
+input:hover {
+  border-radius: 20px;
+  border: 2px solid #cd8808;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search {
+  width: 90px;
+  height: 40px;
+  background: #d98e04;
+  border-radius: 15px;
+  color: #feffff;
+  border: 2px solid #cd8808;
+  margin: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.search:hover {
+  background: #f09308;
+}
+
+.login {
+  width: 90px;
+  height: 40px;
+  background: #d98e04;
+  border-radius: 15px;
+  border: 2px solid#d98e04;
+  cursor: pointer;
+}
+
+.login a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #feffff;
+}
+
+.login:hover {
+  background: #f09308;
+  border-radius: 15px;
+}

@@ -1,0 +1,115 @@
+.login-mondal {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  background: #d98e04;
+  border-radius: 15px;
+  border: 2px solid#d98e04;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background: #bf9d73;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  animation: example 1s ease-in-out;
+}
+
+.email,
+.password {
+  padding: 10px;
+  margin: 15px;
+  max-width: 270px;
+  background: #bf9d73;
+  border-radius: 2px solid #f2efe9;
+}
+
+.form-btn {
+  text-align: center;
+}
+
+.show {
+  background: #d98e04;
+  border: 2px solid #cd8808;
+  font-size: 18px;
+  width: 60px;
+  height: 30px;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.show:hover {
+  background-color: #f09308;
+}
+
+.submit {
+  background: #a60311;
+  width: 130px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 15px;
+  border: 2px solid #590202;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #cc1c39;
+}
+
+.close {
+  position: fixed;
+  z-index: 3;
+  bottom: 875px;
+  right: 2px;
+  background: #d98e04;
+  color: #a60311;
+  font-weight: 900;
+  font-size: 20px;
+  border: 1px solid #f2efe9;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background: #f09308;
+}
+
+.important {
+  color: #a60311;
+  font-weight: 600;
+  margin-left: 40px;
+}
+
+@-webkit-keyframes example {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}
+
+@keyframes example {
+  from {
+    top: -100px;
+    opacity: 0;
+  }
+  to {
+    top: 0px;
+    opacity: 1;
+  }
+}

@@ -19,7 +19,7 @@ The key dependencies are:
 6.react-router-dom: DOM bindings for React Router to handle routing in the application.
 7.redux: A predictable state container for JavaScript apps.
 
- _Installation_
+ __Installation__
 
 1.git clone git@github.com:Alevtina-98/popcorn-time.git
 2.cd popcorn-time

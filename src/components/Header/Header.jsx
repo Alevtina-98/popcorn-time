@@ -4,7 +4,8 @@ import { useDispatch } from "react-redux";
 import { openModal } from "../LogIn/modalSlice";
 import "./Header.css";
 
-const logo = "/assets/img/Popcorn_Time_logo.png";
+const logo =
+  "https://Alevtina-98.github.io/popcorn-time/assets/img/Popcorn_Time_logo.png";
 
 const Header = () => {
   const [query, setQuery] = useState("");

@@ -11,6 +11,9 @@ const MovieDetails = () => {
   const apiKey = import.meta.env.VITE_API_KEY;
   const { id } = useParams();
 
+  const loader =
+    "https://Alevtina-98.github.io/popcorn-time/assets/img/Popcorn_Time_logo.png";
+
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -47,7 +50,12 @@ const MovieDetails = () => {
   }, [id]);
 
   if (!detailsMovies || !movieVideos || !movieCast) {
-    return <p>Loading</p>;
+    return (
+      <div
+        className="loader"
+        style={{ backgroundImage: `url(${loader})` }}
+      ></div>
+    );
   }
   return (
     <div className="movie-details">
@@ -100,7 +108,6 @@ const MovieDetails = () => {
             )}
           </p>
           <p className="overview">
-            
             Overview: <br />
             <span>{detailsMovies.overview}</span>{" "}
           </p>

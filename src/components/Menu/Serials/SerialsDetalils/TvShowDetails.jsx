@@ -10,6 +10,8 @@ const TvSnowDetails = () => {
   const [tvShowCast, setTvShowCast] = useState([]);
 
   const apiKey = import.meta.env.VITE_API_KEY;
+  const loader =
+    "https://Alevtina-98.github.io/popcorn-time/assets/img/Popcorn_Time_logo.png";
 
   useEffect(() => {
     const fetchTvShowDetails = async () => {
@@ -46,7 +48,12 @@ const TvSnowDetails = () => {
   }, [id]);
 
   if (!tvShow || !tvShowVideos || !tvShowCast.length) {
-    return <p className="loading">Loading...</p>;
+    return (
+      <div
+        className="loader"
+        style={{ backgroundImage: `url(${loader})` }}
+      ></div>
+    );
   }
 
   return (

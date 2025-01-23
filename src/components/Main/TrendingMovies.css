@@ -15,10 +15,10 @@
 
 @keyframes float {
   from {
-    transform: translateY(0); 
+    transform: translateY(0);
   }
   to {
-    transform: translateY(2352px); 
+    transform: translateY(2352px);
   }
 }
 

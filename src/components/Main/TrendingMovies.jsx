@@ -16,7 +16,8 @@ const TrendingMovies = () => {
   const [trendingMovies, setTrendingMovies] = useState([]);
   const navigate = useNavigate();
   const apiKey = import.meta.env.VITE_API_KEY;
-  const logoImg = "/assets/img/Popcorn_Time_logo.png";
+  const logoImg =
+    "https://Alevtina-98.github.io/popcorn-time/assets/img/Popcorn_Time_logo.png";
 
   // console.log(apiKey);
 

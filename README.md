@@ -7,7 +7,7 @@ Popcorn Time is a web application that allows users to watch the latest movies a
 To get started with the project, install the following dependencies:
 
 ```bash
-npm install```
+npm install
 
 The key dependencies are:
 
@@ -21,7 +21,7 @@ The key dependencies are:
 
 ##Installation
 
-1.git clone https://github.com/your-username/popcorn-time.git
+1.git clone git@github.com:Alevtina-98/popcorn-time.git
 2.cd popcorn-time
 3.npm install
 
